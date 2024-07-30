@@ -1,0 +1,19 @@
+description: >
+  Installs a version of detekt or latest if none is provided. The version number must match the release number on https://github.com/detekt/detekt/releases.
+
+parameters:
+  version:
+    type: string
+    default: "latest"
+    description: "detekt version to install. Default is latest."
+  verbose:
+    type: boolean
+    default: false
+    description: "If true, display verbose output for the installation. Default is false."
+steps:
+  - run:
+      environment:
+        DETEKT_VERSION: "<<parameters.version>>"
+        DETEKT_VERBOSE_INSTALL: "<<parameters.verbose>>"
+      name: Install detekt <<parameters.version>>
+      command: <<include(scripts/install.sh)>>

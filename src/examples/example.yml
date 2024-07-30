@@ -1,13 +1,17 @@
 description: >
-  Sample example description.
-# Provide a use-case based example for using this orb.
-# Everything in the `usage` section will be displayed in the orb registry.
-# Comments are not retained.
+  Show how to install detekt and run it on a Kotlin project.
+
 usage:
   version: 2.1
   orbs:
-    <orb-name>: <namespace>/<orb-name>@1.2.3
+    detekt: marcospereira/kotlin-detekt-org@0.0.1
+  jobs:
+    install-detekt:
+      executor: detekt/default
+      steps:
+        - detekt/install:
+          version: "1.23.6" # Optional. Default is "latest"
   workflows:
     use-my-orb:
       jobs:
-        - <orb-name>/<job-name>
+        - install-detekt

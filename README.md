@@ -1,15 +1,8 @@
-# Orb Template
-
+# Kotlin detekt orb
 
 [![CircleCI Build Status](https://circleci.com/gh/marcospereira/kotlin-detekt-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/marcospereira/kotlin-detekt-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/marcospereira/kotlin-detekt-orb.svg)](https://circleci.com/developer/orbs/orb/marcospereira/kotlin-detekt-orb) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/marcospereira/kotlin-detekt-orb/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
-
-
-A project template for Orbs.
-
-This repository is designed to be automatically ingested and modified by the CircleCI CLI's `orb init` command.
-
-_**Edit this area to include a custom title and description.**_
+This orb provides a set of commands and jobs to lint Kotlin code using [detekt](https://detekt.github.io/detekt/).
 
 ---
 
@@ -24,6 +17,7 @@ _**Edit this area to include a custom title and description.**_
 We welcome [issues](https://github.com/marcospereira/kotlin-detekt-orb/issues) to and [pull requests](https://github.com/marcospereira/kotlin-detekt-orb/pulls) against this repository!
 
 ### How to Publish An Update
+
 1. Merge pull requests with desired changes to the main branch.
     - For the best experience, squash-and-merge and use [Conventional Commit Messages](https://conventionalcommits.org/).
 2. Find the current version of the orb.
